@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uniendo numeros y letras</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Pantalla de inicio -->
+    <div id="startScreen" class="screen">
+      <h1>Uniendo numeros y letras</h1>
+      <button id="vowelsBtn">Modo Vocales</button>
+      <button id="numbersBtn">Modo Números</button>
+    </div>
+
+    <!-- Pantalla del juego -->
+    <div id="gameScreen" class="screen hidden">
+      <h1>Uniendo numeros y letras</h1>
+      <div class="info">
+        <p>Tiempo: <span id="timer">00:00</span></p>
+      </div>
+      <div id="gameBoard"></div>
+      <button id="resetBtn" class="hidden">Volver a Jugar</button>
+      <button id="backToStartBtn" class="hidden">Volver al Inicio</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
