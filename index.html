@@ -3,29 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Uniendo numeros y letras</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Juego de Sumas para Niños</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
     <!-- Pantalla de inicio -->
     <div id="startScreen" class="screen">
-      <h1>Uniendo numeros y letras</h1>
-      <button id="vowelsBtn">Modo Vocales</button>
-      <button id="numbersBtn">Modo Números</button>
+      <h1>¡Bienvenido al Juego de Sumas!</h1>
+      <button id="startBtn">Comenzar el Juego</button>
     </div>
 
     <!-- Pantalla del juego -->
     <div id="gameScreen" class="screen hidden">
-      <h1>Uniendo numeros y letras</h1>
-      <div class="info">
-        <p>Tiempo: <span id="timer">00:00</span></p>
-      </div>
-      <div id="gameBoard"></div>
-      <button id="resetBtn" class="hidden">Volver a Jugar</button>
-      <button id="backToStartBtn" class="hidden">Volver al Inicio</button>
+      <h1>Resuelve la Suma</h1>
+      <div id="question" class="question"></div>
+      <div id="options" class="options"></div>
+    </div>
+
+    <!-- Pantalla de acierto -->
+    <div id="winScreen" class="screen hidden">
+      <h1>¡Felicidades! 🎉</h1>
+      <p>Respuesta correcta.</p>
+      <button id="continueBtn">Continuar</button>
+      <button id="backToStartBtn">Volver al Inicio</button>
+    </div>
+
+    <!-- Pantalla de error -->
+    <div id="loseScreen" class="screen hidden">
+      <h1>¡Tú puedes! 💪</h1>
+      <p>No te rindas, sigue intentando.</p>
+      <button id="tryAgainBtn">Intentar de Nuevo</button>
+      <button id="backToStartBtn2">Volver al Inicio</button>
     </div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
